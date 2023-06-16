@@ -46,8 +46,7 @@ def FlipkartScraper(search):
 
 
     from pymongo import MongoClient
-    ConnectionString = "mongodb+srv://NomanKhan:mscbdaproject@cluster0.jbg5pqy.mongodb.net/?retryWrites=true&w=majority"
-    #ConnectionString = "mongodb+srv://Kalpo_Mukhopadhyay:MScBDAProject@cluster0.vewvhdc.mongodb.net/?retryWrites=true&w=majority"
+    ConnectionString = ""
     client = MongoClient(ConnectionString)
     db = client.flipkart.items
     db.insert_many(items)
